@@ -7,6 +7,6 @@
       [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
     );
   } catch (PDOException $e) {
-    echo "Невозможно установить соединение с базой данных" . $e->getMessage();
+    echo "Нет соединение с базой данных" . $e->getMessage();
   }
 ?>

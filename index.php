@@ -9,7 +9,7 @@
   try {
     $coor->execute(['lat' => $lat, 'lng' => $lng, 'comment' => $comment, 'created_date' => $crdate, ]);
   } catch (PDOException $e) {
-    echo "Невозможно установить соединение с базой данных" . $e->getMessage();
+    echo "нет соединение с базой данных" . $e->getMessage();
   }
   echo "HELLO";
   header('Location:main.php');
