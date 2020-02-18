@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="map" style="height: 500px; margin-bottom:10px;"></div>
-    <form class="" action="add.php" method="post">
+    <form class="" action="index.php" method="post">
       <div class="" align="center">
         <table>
           <tr>
@@ -69,7 +69,7 @@
       }
       map.on('click', onMapClick);
       <?php
-      require_once('db-connector.php');
+      require_once('db_connection.php');
       $query = "SELECT * FROM coordinates";
       $allmarkers = $pdo->query($query);
       while ($marker = $allmarkers->fetch()){

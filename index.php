@@ -1,5 +1,5 @@
 <?php
-  require_once('db-connector.php');
+  require_once('db_connection.php');
   $lat = $_POST['lat'];
   $lng = $_POST['lng'];
   $comment = $_POST['comment'];
@@ -12,6 +12,6 @@
     echo "Невозможно установить соединение с базой данных" . $e->getMessage();
   }
   echo "HELLO";
-  header('Location: leaflet-task.php');
+  header('Location:main.php');
   exit();
  ?>
